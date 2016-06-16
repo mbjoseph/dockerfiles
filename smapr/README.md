@@ -3,7 +3,7 @@ This Dockerfile contains the [smapr](https://github.com/earthlab/smapr) package 
 To interactively run the container:
 
 ```
-docker run -it smapr bash
+docker run -it mbjoseph/smapr bash
 ```
 
 ## Example: saving a GeoTIFF to the local filesystem
@@ -11,7 +11,7 @@ docker run -it smapr bash
 If you want to use the smapr Docker image to produce and save a GeoTIFF to the local filesystem, you'll need to mount a volume, e.g., '~/Desktop'.
 
  ```
-docker run -v ~/Desktop:/home -it smapr bash
+docker run -v ~/Desktop:/home -it mbjoseph/smapr bash
  ```
 
  Then, inside the container:
